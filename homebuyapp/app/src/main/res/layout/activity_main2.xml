@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                app:cardCornerRadius="30dp"
+>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/home1"
+                android:background="@drawable/radius"
+                android:transitionName="scalebig"/>
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/backbtn"
+                android:background="@drawable/circle"
+                android:backgroundTint="#CCCCCC"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/setting"
+                android:background="@drawable/circle"
+                android:backgroundTint="#CCCCCC"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"/>
+
+
+
+        </RelativeLayout>
+
+        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="30dp"
+            android:layout_marginTop="-40dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Urban \nApartment"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/save1"
+                android:layout_gravity="right"
+                android:layout_marginRight="40dp"
+                android:padding="10dp"
+                android:layout_marginTop="60dp"
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toronto,Ontorio"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Faculty of Information is an undergraduate and graduate school that offers the following programs: a Bachelor of Information, a Master of Information, a Master of Museum Studies, and a PhD in information studies, as well as diploma courses."
+                android:layout_marginTop="200dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="15dp"
+                android:textColor="#B6B6B6"
+                android:textStyle="bold"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="330dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/radius"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:backgroundTint="#DFDFDF">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/bedroom"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bedroom"
+                            android:layout_gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginLeft="40dp"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/radius"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:backgroundTint="#DFDFDF">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/bathroom"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bathroom"
+                            android:layout_gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/radius"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:backgroundTint="#DFDFDF">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/parking"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Parking"
+                            android:layout_gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="20dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="430dp"
+                android:layout_marginBottom="20dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$16.78k"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Per month with tax"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#9F9F9F"/>
+
+
+                </LinearLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cornerRadius="30dp"
+                    android:backgroundTint="@color/black"
+                    android:text="Book Now"
+                    android:textSize="20dp"
+                    android:padding="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"/>
+            </LinearLayout>
+        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

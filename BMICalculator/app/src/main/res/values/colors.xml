@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="overweight">#FF0000</color>
+    <color name="normal">#4CAF50</color>
+    <color name="underweight">#FFD350</color>
+    <color name="r">#46FACF</color>
+    <color name="status_bar_color">#000000</color> <!-- Replace with your desired color -->
+</resources>

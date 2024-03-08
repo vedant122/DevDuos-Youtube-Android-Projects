@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bmiinformation"
+    android:background="@color/black"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/laodinganimation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250sdp"
+            app:lottie_rawRes="@raw/calculating"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+        <TextView
+            android:id="@+id/calbmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculating BMI"
+            android:textSize="@dimen/_30sdp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:background="@drawable/border"
+            android:backgroundTint="#3F51B5"
+            android:textColor="@color/white"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/agecard"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_marginTop="@dimen/_50sdp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Age"
+                    android:background="@color/black"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_40sdp"/>
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:background="@color/black"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_80sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:textColor="#3F51B5"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/weightcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginBottom="@dimen/_50sdp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:background="@color/black"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/_40sdp"/>
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CM : 50"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:background="@color/black"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_80sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:textColor="#3F51B5"/>
+        </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/heightcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_marginBottom="@dimen/_50sdp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Height"
+                    android:background="@color/black"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_40sdp"/>
+                <TextView
+                    android:id="@+id/height"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CM : 50"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:background="@color/black"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_80sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:textColor="#3F51B5"/>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

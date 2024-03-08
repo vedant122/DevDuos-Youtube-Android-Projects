@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".heightselect"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/selectheighttxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Height"
+        android:gravity="center"
+        android:textSize="@dimen/_35sdp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="#3F51B5"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="-50dp">
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/_165sdp"
+        android:layout_height="@dimen/_500sdp"
+        android:src="@drawable/standingmale"
+        />
+
+    <LinearLayout
+        android:id="@+id/llcm"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_60sdp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Centimeter"
+            android:textSize="@dimen/_30sdp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/selectedcm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="@dimen/_20sdp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcheight"
+            android:visibility="visible"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_330sdp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_60sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feet "
+                android:textSize="@dimen/_30sdp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/selectedfeet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="@dimen/_20sdp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rpfeet"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_130sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inches "
+                android:textSize="@dimen/_30sdp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"/>
+            <TextView
+                android:id="@+id/selectedinch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="@dimen/_20sdp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rpinch"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_130sdp"/>
+        </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llbuttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="-100dp">
+    <Button
+        android:id="@+id/back"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:backgroundTint="#FFFFFF"
+        android:text="Back"/>
+
+        <Button
+            android:id="@+id/nextbtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:text="Next"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:backgroundTint="#2196F3"
+            android:layout_marginTop="@dimen/_30sdp"/>
+    </LinearLayout>
+</LinearLayout>

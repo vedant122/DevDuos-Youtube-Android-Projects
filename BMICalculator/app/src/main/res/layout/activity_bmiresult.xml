@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".bmiresult">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/bmiinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OverWeight"
+            android:textColor="@color/overweight"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_30sdp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_marginTop="@dimen/_30sdp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/weight"/>
+    </LinearLayout>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/bmicard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:backgroundTint="@color/black"
+        app:cardElevation="@dimen/_100sdp"
+        app:strokeColor="@color/overweight"
+        app:strokeWidth="@dimen/_2sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BMI"
+            android:textAlignment="center"
+            android:textSize="@dimen/_50sdp"
+            android:textStyle="bold"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:background="#504747"/>
+
+        <TextView
+            android:id="@+id/bmi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="18.1"
+            android:textAlignment="center"
+            android:textSize="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:textStyle="bold"
+            android:textColor="@color/overweight"
+            />
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/neededweightcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:backgroundTint="@color/black"
+        app:cardElevation="@dimen/_100sdp"
+        app:strokeWidth="@dimen/_2sdp"
+        app:strokeColor="@color/overweight">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Need Weight Between"
+            android:textAlignment="center"
+            android:textSize="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textStyle="bold"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_120sdp"
+            android:background="#504747"/>
+
+        <TextView
+            android:id="@+id/neededweight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="58~70"
+            android:textAlignment="center"
+            android:textSize="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_140sdp"
+            android:textStyle="bold"
+            android:textColor="#8BC34A"
+            />
+    </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

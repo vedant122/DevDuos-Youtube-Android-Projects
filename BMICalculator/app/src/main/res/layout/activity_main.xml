@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <ImageButton
+       android:id="@+id/female"
+       android:layout_width="@dimen/_100sdp"
+       android:layout_height="@dimen/_100sdp"
+       android:src="@drawable/female"
+       android:scaleType="centerInside"
+       android:background="@drawable/border"
+       android:padding="@dimen/_10sdp"
+       android:layout_marginTop="@dimen/_50sdp"
+       android:layout_marginLeft="@dimen/_30sdp"/>
+
+   <ImageButton
+       android:id="@+id/male"
+       android:layout_width="@dimen/_100sdp"
+       android:layout_height="@dimen/_100sdp"
+       android:src="@drawable/male"
+       android:scaleType="centerInside"
+       android:background="@drawable/border"
+       android:padding="@dimen/_10sdp"
+       android:layout_marginTop="@dimen/_50sdp"
+       android:layout_marginLeft="@dimen/_180sdp"/>
+
+   <ImageView
+      android:id="@+id/femaleselect"
+       android:layout_width="@dimen/_20sdp"
+       android:layout_height="@dimen/_20sdp"
+      android:src="@drawable/select"
+      android:layout_marginLeft="@dimen/_100sdp"
+      android:layout_marginTop="@dimen/_60sdp"/>
+
+   <ImageView
+       android:id="@+id/maleselect"
+       android:layout_width="@dimen/_20sdp"
+       android:layout_height="@dimen/_20sdp"
+       android:src="@drawable/select"
+       android:layout_marginLeft="@dimen/_250sdp"
+       android:layout_marginTop="@dimen/_60sdp"/>
+
+   <TextView
+       android:id="@+id/txtage"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:text="AGE"
+       android:textAlignment="center"
+      android:textColor="@color/white"
+       android:paddingLeft="@dimen/_20sdp"
+       android:paddingBottom="@dimen/_10sdp"
+       android:paddingTop="@dimen/_10sdp"
+       android:paddingRight="@dimen/_10sdp"
+      android:layout_centerHorizontal="true"
+      android:textStyle="bold"
+       android:textSize="@dimen/_20sdp"
+       android:background="@drawable/border"
+       android:backgroundTint="#3F51B5"
+       android:layout_marginLeft="@dimen/_10sdp"
+       android:layout_marginRight="@dimen/_10sdp"
+       android:layout_marginTop="@dimen/_170sdp"/>
+
+   <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/agerecyclerview"
+       android:layout_width="wrap_content"
+       android:layout_height="@dimen/_300sdp"
+      android:background="@color/white"
+      android:layout_marginTop="@dimen/_230sdp"
+       android:backgroundTint="@color/black"
+      android:orientation="horizontal"/>
+
+   <TextView
+       android:id="@+id/txtweight"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Weight"
+       android:textColor="@color/white"
+       android:layout_centerHorizontal="true"
+       android:textStyle="bold"
+       android:textSize="@dimen/_20sdp"
+       android:background="@drawable/border"
+       android:backgroundTint="#3F51B5"
+       android:paddingLeft="@dimen/_20sdp"
+       android:paddingBottom="@dimen/_10sdp"
+       android:paddingTop="@dimen/_10sdp"
+       android:paddingRight="@dimen/_10sdp"
+       android:layout_marginLeft="@dimen/_10sdp"
+       android:layout_marginRight="@dimen/_10sdp"
+       android:layout_marginTop="@dimen/_340sdp"/>
+
+   <com.google.android.material.button.MaterialButton
+       android:id="@+id/kg"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="KG"
+       android:backgroundTint="#3F51B5"
+       app:strokeWidth="@dimen/_1sdp"
+       app:strokeColor="@color/white"
+      android:layout_marginTop="@dimen/_343sdp"
+      android:layout_marginLeft="@dimen/_120sdp"/>
+
+   <com.google.android.material.button.MaterialButton
+       android:id="@+id/pounds"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Pounds"
+       android:backgroundTint="#3F51B5"
+       app:strokeWidth="@dimen/_1sdp"
+       app:strokeColor="@color/white"
+       android:layout_marginTop="@dimen/_343sdp"
+       android:layout_marginLeft="@dimen/_200sdp"
+       />
+
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/weightrecyclerview"
+       android:layout_width="wrap_content"
+       android:layout_height="@dimen/_100sdp"
+       android:background="@color/white"
+       android:layout_marginTop="@dimen/_400sdp"
+       android:backgroundTint="@color/black"
+       android:orientation="horizontal"/>
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="@dimen/_500sdp">
+
+      <LinearLayout
+          android:id="@+id/agell"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:orientation="horizontal">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Age : "
+          android:textStyle="bold"
+          android:textColor="#B8B6B6"
+          android:layout_marginLeft="@dimen/_40sdp"
+          android:textSize="@dimen/_25sdp"/>
+
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/agecounter"
+             android:text="1"
+             android:textStyle="bold"
+             android:layout_marginLeft="@dimen/_60sdp"
+             android:textColor="#B8B6B6"
+             android:textSize="@dimen/_25sdp"/>
+      </LinearLayout>
+      <LinearLayout
+          android:id="@+id/weightll"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:orientation="horizontal">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Weight : "
+          android:layout_marginLeft="@dimen/_40sdp"
+          android:textStyle="bold"
+          android:textColor="#B8B6B6"
+          android:textSize="@dimen/_25sdp"
+          />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/weightcounter"
+             android:text="1"
+             android:textStyle="bold"
+             android:layout_marginLeft="@dimen/_27sdp"
+             android:textColor="#B8B6B6"
+             android:textSize="@dimen/_25sdp"
+             />
+      </LinearLayout>
+   </LinearLayout>
+
+   <com.google.android.material.button.MaterialButton
+       android:id="@+id/nextheight"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:text="NEXT"
+      android:textColor="@color/white"
+      android:backgroundTint="#2196F3"
+       android:layout_marginTop="@dimen/_600sdp"
+      android:textStyle="bold"
+       android:layout_marginBottom="@dimen/_20sdp"
+      android:textSize="@dimen/_20sdp"/>
+</RelativeLayout>
+
+</ScrollView>
