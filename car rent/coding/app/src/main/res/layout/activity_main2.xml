@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottombar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/back" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/like" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:src="@drawable/car1back"
+                android:scaleY="1.4"
+                android:scaleX="1.4"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ferrari"
+                android:textSize="25dp"
+                android:layout_marginLeft="20dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Californai"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="is a grand touring sports car produced by the Italian automotive manufacturer Ferrari. The California represented a radical new design."
+                android:layout_margin="20dp"
+                android:textColor="#dbdbdb"
+                android:textSize="20dp"/>
+            
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="140dp"
+                        app:cardCornerRadius="15dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:strokeColor="#1E000000"
+                        android:layout_marginLeft="30dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/automatic" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Automatic"
+                                android:layout_marginTop="15dp"
+                                android:textSize="20dp"
+                                android:textStyle="bold"/>
+
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:strokeColor="#1E000000"
+                        android:layout_marginLeft="30dp"
+                        app:cardCornerRadius="15dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/seats" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2 Seats"
+                                android:layout_marginTop="15dp"
+                                android:textSize="20dp"
+                                android:textStyle="bold"/>
+
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="140dp"
+                        app:cardCornerRadius="15dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:strokeColor="#1E000000"
+                        android:layout_marginLeft="30dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/liter" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="6.4 L"
+                                android:layout_marginTop="15dp"
+                                android:textSize="20dp"
+                                android:textStyle="bold"/>
+
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/calendar"
+            android:background="@drawable/roundcorner"
+            android:padding="15dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Book Now"
+            android:textColor="@color/white"
+            app:cornerRadius="10dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#0622ff"/>
+    </LinearLayout>
+</RelativeLayout>
